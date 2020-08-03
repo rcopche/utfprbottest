@@ -23,7 +23,7 @@ connection.connect(function(error){
     })  
 });
 
-app.get("/", function(req,res){
+app.get("/api/all", function(req,res){
     connection.query("SELECT * FROM TESTE", "testing1", function(error, result){
         res.json(result);
     });    
